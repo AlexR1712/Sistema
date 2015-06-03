@@ -72,9 +72,14 @@ $preference = $mp->create_preference ($preference_data);
 
 
 <a class="btn btn-primary" href="/sys/">Volver</a>
-<a class="btn btn-success" href="<?php echo $preference['response']['init_point']; ?>" name="MP-Checkout"><i class="icon-white icon-certificate"></i> Pagar</a>
+<? if (isset($preference)) {
+   echo '<a class="btn btn-success" href="<?php echo $preference['response']['init_point']; ?>" name="MP-Checkout"><i class="icon-white icon-certificate"></i> Pagar</a>';
+}?>
+
  <script type="text/javascript" src="https://www.mercadopago.com/org-img/jsapi/mptools/buttons/render.js">
 <script src="http://code.jquery.com/jquery.js"></script>
   </body>
   <footer></footer>
 </html>
+
+
