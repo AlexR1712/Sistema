@@ -50,7 +50,7 @@ echo "<label>Debiendo:</label></br><div class=\"input-prepend\"><input class=\"s
 }  }}
 
 require_once ('lib/mercadopago.php');
-$mp = new MP('3152228627428501', '2bFeEa1jFU3B9DiiscbNuPOCbKJFWBVu'); /* Client ID y Toekn Secret de Mercado pago */
+$mp = new MP('3152201', '2bFscbNuPOCbKJFWBVu'); /* Client ID y Toekn Secret de Mercado pago */
 $preference_data = array(
     "items" => array(
        array(
